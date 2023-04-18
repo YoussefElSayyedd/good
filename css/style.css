@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body {
+    position: relative;
+}
+/* Start Component */
+.intro .mainBar:hover {
+    color: #2adff3;
+}
+.product .mainBar:hover {
+    color: #2adff3;
+}
+.company .mainBar:hover {
+    color: #2adff3;
+}
+.contact .mainBar:hover {
+    color: #2adff3;
+}
+.menu {
+    color: white;
+    display: none;
+    position: absolute;
+    z-index: 9999999;
+}
+@media (max-width: 767px) {
+    .menu {
+        display: block;
+    }
+}
+.menu span {
+    display: block;
+    padding: 5px;
+}
+.menu i {
+    cursor: pointer;
+}
+.page {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+.layout {
+    background-color: rgb(0 0 0 / 50%);
+    height: 100vh;
+}
+@media (max-width: 767px) {
+    .layout {
+        display: none;        
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        background-color: rgb(0 0 0 / 100%);
+    }
+    .layout.show {
+        display: block;
+    }
+}
+.main-bar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25vh;
+}
+/* End Component */
+/* Start Introduction */
+.intro {
+    background-image: url(../images/constructive_bg_01.jpg);
+    background-size: cover;
+    max-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.intro .mainBar {
+    font-size: 18px;
+    color: #dcd3d3;
+    padding: 20px 0;
+    margin: 20px;
+    width: 165px;
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+}
+.intro .mainBar.active {
+    color: #2adff3;
+}
+.intro .mainBar::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 130px;
+    height: 1px;
+    background-color: #dcd3d3;
+}
+.intro .mainBar::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    background-color: white;
+}
+.intro .mainBar.active::after {
+    background-color: #2adff3;
+}
+.intro .main-bar span {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.intro .main-bar span i {
+    font-size: 16px;
+}
+.landing {
+    max-width: 500px;
+}
+@media (max-width: 767px) {
+    .landing {
+        margin: 100px auto;
+        padding: 0 20px;
+    }
+}
+.landing h2 {
+    color: white;
+}
+.landing p {
+    margin: 20px 0;
+    color: rgb(238, 237, 237);
+    line-height: 2;
+    font-size: 18px;
+}
+.landing .btn {
+    border: 1px solid white;
+    width: fit-content;
+    padding: 8px 22px;
+    border-radius: 4px;
+    color:rgb(238, 237, 237);
+    font-size: 18px;
+    cursor: pointer;
+    transition: .5s;
+}
+.landing .btn:hover {
+    background-color: #2adff3;
+    border-color: #2adff3;
+    color: black;
+}
+/* End Introduction */
+/* Start Our Product  */
+.product {
+    background-image: url(../images/constructive_bg_02.jpg);
+    background-size: cover;
+    max-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.product .landing h2 {
+    margin: 20px 0;
+}
+.landing .land {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.land img {
+    max-width: 250px;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .land img {
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .land img {
+        max-width: 100%;
+    }
+}
+@media (min-width: 832px) {
+    .land img {
+        max-width: calc(180px);
+    }
+}
+@media (min-width: 932px) {
+    .land img {
+        max-width: calc(200px);
+    }
+}
+@media (min-width: 1032px) {
+    .land img {
+        max-width: calc(220px);
+    }
+}
+.product .mainBar {
+    font-size: 18px;
+    color: #dcd3d3;
+    padding: 20px 0;
+    margin: 20px;
+    width: 165px;
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+}
+.product .mainBar.active {
+    color: #2adff3;
+}
+.product .mainBar::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 130px;
+    height: 1px;
+    background-color: #dcd3d3;
+}
+.product .mainBar::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    background-color: white;
+}
+.product .mainBar.active::after {
+    background-color: #2adff3;
+}
+.product .main-bar span {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.product .main-bar span i {
+    font-size: 16px;
+}
+/* End Our Product  */
+/* Start Our Company */
+.company {
+    background-image: url(../images/constructive_bg_03.jpg);
+    background-size: cover;
+    max-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.landing {
+    max-width: 700px;
+    width: 100%;
+}
+.company .mainBar {
+    font-size: 18px;
+    color: #dcd3d3;
+    padding: 20px 0;
+    margin: 20px;
+    width: 165px;
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+}
+.company .mainBar.active {
+    color: #2adff3;
+}
+.company .mainBar::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 130px;
+    height: 1px;
+    background-color: #dcd3d3;
+}
+.company .mainBar::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    background-color: white;
+}
+.company .mainBar.active::after {
+    background-color: #2adff3;
+}
+.company .main-bar span {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.company .main-bar span i {
+    font-size: 16px;
+}
+.company .land {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.company h2 {
+    margin: 20px 0;
+}
+.company .land .box {
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(0 0 0 / 25%);
+    cursor: pointer;
+    transition: .3s;
+}
+.company .land .box:hover {
+    border-color:  rgb(42 223 243 / 25%);
+    background-color: rgb(42 223 243 / 25%);
+}
+.company .land .box:hover h2 {
+    color: black;
+}
+.company .land .box:hover p {
+    color: black;
+}
+.company .land .box:hover i {
+    border-color: black;
+}
+.company .land .box h2 {
+    font-size: 18px;
+    color: #dcd3d3;
+    margin: 10px 0 5px;
+}
+.company .land .box p {
+    font-size: 12px;
+    margin: 5px 5px 10px 0;
+    padding: 0;
+}
+.company .land .box i {
+    font-size: 22px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.company .land .box i:hover {
+    color: white;
+    border-color: white;
+}
+/* End Our Company */
+/* Start Contact Us  */
+.contact {
+    background-image: url(../images/constructive_bg_04.jpg);
+    background-size: cover;
+    max-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+@media (max-width: 924px) {
+    .contact .layout {
+        display: none;        
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        background-color: rgb(0 0 0 / 100%);
+    }
+    .contact .layout.show {
+        display: block;
+    }
+}
+@media (max-width: 924px) {
+    .contact .menu {
+        display: block;
+    }
+}
+@media (min-width: 878px) {
+    .contact .landing {
+        max-width: 860px;
+        width: 860px;
+    }
+}
+.contact .mainBar {
+    font-size: 18px;
+    color: #dcd3d3;
+    padding: 20px 0;
+    margin: 20px;
+    width: 165px;
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+}
+.contact .mainBar.active {
+    color: #2adff3;
+}
+.contact .mainBar::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 130px;
+    height: 1px;
+    background-color: #dcd3d3;
+}
+.contact .mainBar::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    background-color: white;
+}
+.contact .mainBar.active::after {
+    background-color: #2adff3;
+}
+.contact .main-bar span {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.contact .main-bar span i {
+    font-size: 16px;
+}
+.contact .landing {
+    background-color: rgb(0 0 0 / 50%);
+    padding: 40px;
+}
+.contact .landing h2 {
+    margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+    .contact .land {
+        flex-direction: column;
+    }
+}
+.contact .land .input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+.contact .land input,
+.contact .land textarea {
+    min-width: 300px;
+    width: 100%;
+    padding-left: 10px;
+    background: none;
+    border: 1px solid white;
+    margin-bottom: 15px;
+}
+.contact .land input::placeholder,
+.contact .land textarea::placeholder {
+    color: white;
+}
+.contact .land input:focus,
+.contact .land textarea:focus {
+    outline: none;
+    caret-color: #2adff3;
+}
+.contact .land textarea {
+    height: 200px;
+    padding-top: 10px;
+}
+.contact .land .name,
+.contact .land .email {
+    height: 50px;
+}
+.contact .land .submit {
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    transition: .3s;
+}
+.contact .land .submit:hover {
+    background-color: #2adff3;
+    border-color: #2adff3;
+    color: black;
+}
+.contact .land .title p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+@media (min-width: 760px) {
+    .contact .landing {
+        margin: 70px;
+    }
+}
+@media (min-width: 924px) {
+    .contact .landing {
+        margin: 0;
+    }
+}
+/* End Contact Us  */
+/* Start Footer */
+.footer {
+    position: absolute;
+    z-index: 99999999999;
+    color: white;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(0 0 0 / 70%);
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.footer span {
+    color: #2adff3;
+    font-weight: bold;
+}
+/* End Footer */
